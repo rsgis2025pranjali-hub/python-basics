@@ -1,0 +1,12 @@
+image: gitpod/workspace-python-3.11
+
+tasks:
+  - init: |
+      pip install -r requirements.txt || true
+    command: |
+      sleep infinity
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
